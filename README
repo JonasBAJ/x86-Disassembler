@@ -4,10 +4,10 @@ course: Comuper architecture
 
 Files:
 	disasm.asm this is main file containing source code.
-	DEBUG.COM this is program to create tests for disasm and 
-		can be usfull for many things in this context.
-	ATS.TXT this is output file for disasm.
-	big.txt this is test file with all instructions that can be disassembled.
+	DEBUG.COM this is program to create tests for disasm.asm and 
+		can be useful for many things in this context.
+	ATS.TXT this is output file for disasm.asm.
+	big.txt this is test file with all instructions that can be disassembled with disasm.asm.
 	BIG.COM this file is needed to run the program.
 	TASM.EXE turbo assembler.
 	TD.EXE turbo debuger.
@@ -15,43 +15,34 @@ Files:
 
 Compilation via DosBox steps:
 	1. Download all files. 
-	
 	2. All the files must be in one directory including TASM.EXE,
-	TD.EXE and TLINK.EXE
-	
+		TD.EXE and TLINK.EXE
 	3. Run DOSBox and go to your directory where you have all files.
-
 	4. When you are in your directory via DOSBox, type to compile program:
 		tasm disasm [ENTER]
 		tlink disasm [ENTER]
 
 Creating test file via DOSBox:
 	1. Create example.txt file in your disasm.asm directory.
-
 	2. exemple.txt file must contain these expresions:
 		a100
 		[INSTRUCTIONS]
-
+		[PARAGRAPH - ENTER MUST BE PRESSED]
 		r cx
 		[YOUR FILE SIZE IN BYTES]
 		n big.com
 		W
 		q
-	
 	3. Run DOSBox and go to your directory where you have all files.
-	
 	4. When you are in your directory via DOSBox, type:
 		debug < exemple.txt
-
 	5. New file exemple.com should apear in your directory, 
 		and this actual file that you gonna use.
 
 Lounching program:
 	1. Run DOSBox and go to your directory where you have all files.
-
 	2. When you are in your directory via DOSBox, type:
 		disasm exemple > output.txt
-	
 	3. Congrats!
 
 
