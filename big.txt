@@ -1,0 +1,137 @@
+a100
+mov ax, ss
+mov es, bx
+mov es, word ptr [1234]
+mov word ptr [4789], ds
+mov ax, 5570
+mov es, ax
+mov ax, bx
+mov ax, 1245
+mov al, [9abc]
+mov si, 22
+mov es, ax
+mov bx, 1234
+mov cx, [bp]
+mov si, [1234]
+mov ax, [bx+si]
+mov ax, [bx+di]
+mov ax, [bp+si]
+mov ax, [bp+di]
+mov ax, [si]
+mov ax, [di]
+mov ax, [7894]
+mov ax, [bx]
+mov ax, [bx+si+45]
+mov ax, [bx+di+45]
+mov ax, [bp+si+45]
+mov ax, [bp+di+45]
+mov ax, [si+45]
+mov ax, [di+45]
+mov ax, [bp+45]
+mov ax, [bx+45]
+mov ax, [bx+si+4512]
+mov ax, [bx+di+4512]
+mov ax, [bp+si+4512]
+mov ax, [bp+di+4512]
+mov ax, [si+4512]
+mov ax, [di+4512]
+mov ax, [bp+4512]
+mov ax, [bx+4512]
+mov word ptr [si+bp+1234], 9988
+mov cs, word ptr [bp+si-12]
+jz 0
+jz 1
+jz 2
+jl 0
+jl 2
+jle 6
+jle 5
+jbe 0
+jbe 0
+jpe 5
+jo 08
+js 10
+jnz 3
+jge 0
+jg 5
+jae 8
+ja 1
+jpo 6
+jno 9
+jns 3
+ror al, 1
+ror ax, 1
+ror di, cl
+rol cx, 1
+rol cl, 1
+shr bx, cl
+shr dl, 1
+sar ax, 1
+sar ax, cl
+rcl sp, cl
+rcl ah, 1
+rcr dx, 1
+rcr bl, cl
+not cl
+not dh
+mul bx
+mul sp
+imul bx
+div al
+idiv bl
+div sp
+stosw
+stosb
+lodsw
+lodsb
+scasw
+scasb
+cmpsw
+cmpsb
+movsb
+movsw
+rep
+ret
+aas
+das
+cbw
+cwd
+clc
+cmc
+stc
+cld
+std
+cli
+sti
+hlt
+wait
+lock
+xlat
+lahf
+sahf
+pushf
+popf
+int 3
+into
+iret
+adc ax, bx
+adc ax, [1233]
+adc [1222], cx
+add ax, bx
+add ax, [1233]
+and ax, [bp]
+cmp cx, [bp+di+3456]
+cmp al, [bp+12]
+cmp byte ptr[0001], ax
+cmp ax, bx
+cmp cx, [bp+1234]
+shl ax, cl
+shl ax, 1
+shl al, 1
+shl bp, cl
+
+r cx
+142
+n big.com
+W
+q
