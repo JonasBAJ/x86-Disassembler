@@ -1,12 +1,3 @@
-;Jonas Bajorinas Informatikos 2 kursas INFO 2 gr.
-;Uzduotis: parasyti pilna disasembleri
-;Kompiliavimas tasm   -> DOSBOX: tasm u4jb
-;Linkinimas tlink	  -> DOSBOX: tlink u4jb
-;Programos vykdymas -> DOSBOX: u4jb [test_name] > [output_file.txt]
-;Zinomos klaidos:
-;	1. Nedisasembliuoja kai kurių sąlyginių jmp'ų [70 grupės].
-;	2. Prieš disasembliuotą kodą rašomas adresas yra netikslus.
-
 .model small
 		ASSUME CS:kodas, DS:duomenys, SS:stekas
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
